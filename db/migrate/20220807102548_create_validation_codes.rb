@@ -4,7 +4,7 @@ class CreateValidationCodes < ActiveRecord::Migration[7.0]
       t.string :email
       t.integer :kind
       t.datetime :used_at
-
+      t.string :code, limit: 64
       t.timestamps
     end
   end

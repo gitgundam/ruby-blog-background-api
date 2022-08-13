@@ -25,6 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_07_102548) do
     t.string "email"
     t.integer "kind"
     t.datetime "used_at"
+    t.string "code", limit: 64
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
